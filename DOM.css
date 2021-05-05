@@ -5,3 +5,7 @@ p{
 #center{
     text-align: center;
 }
+
+.democlass {
+    color: red;
+  }

@@ -54,6 +54,19 @@ function myFunction22(){
   document.getElementById("demo").innerHTML = theCSSprop;
 }
 
+function myFunction33() {
+  document.getElementsByTagName("h3")[0].setAttribute("class", "democlass"); 
+}
+
+function myFunction44() {
+  var x = document.getElementsByClassName("democlass")[0].getAttribute("class"); 
+  document.getElementById("demo1").innerHTML = x;
+}
+
+function myFunction55() {
+  document.getElementsByTagName("h4")[0].removeAttribute("class"); 
+}
+
 function myFunction1(){
   var textnode = document.createTextNode("Water");
   var item = document.getElementById("myList1").childNodes[0];
