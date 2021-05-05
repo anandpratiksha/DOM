@@ -9,13 +9,21 @@ function add() {
 function removeHandler() {
   document.removeEventListener("mousemove", add);
 }
+
 function myFunction() {
-    var btn = document.createElement("BUTTON");
-    document.body.appendChild(btn);
-  }
+  var btn = document.createElement("button");
+  document.body.appendChild(btn);
+}
+
+ function appenChild(){
+  var node = document.createElement("LI");
+  var textnode = document.createTextNode("Water");
+  node.appendChild(textnode);
+  document.getElementById("myList").appendChild(node);
+ }
 
 function query() {
-    document.querySelector("h2").innerHTML = "Hello !!";
+    document.querySelector("#qs").innerHTML = "Hello !!";
     document.querySelector(".qs").style.color = "red";
     document.querySelector(".qs").innerHTML = "RED color";
 }
