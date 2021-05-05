@@ -48,6 +48,12 @@ function myFunction11() {
   element.appendChild(fragment);
 }
 
+function myFunction22(){
+  var elem = document.getElementById("test");
+  var theCSSprop = window.getComputedStyle(elem, null).getPropertyValue("background-color");
+  document.getElementById("demo").innerHTML = theCSSprop;
+}
+
 function myFunction1(){
   var textnode = document.createTextNode("Water");
   var item = document.getElementById("myList1").childNodes[0];
