@@ -22,15 +22,15 @@
 
     <h1><li>querySelector()</li></h1>
     <p>The querySelector() method <b>returns the first element that matches one or more CSS selectors.</b> If no match is found, it returns null.</p>
-    <h2 id="qs">Click on button to change the text.</h2>
-    <h2 class="qs">Click on Button to change the color.</h2>
-    <button onclick="query()">CLick Me !!!</button>
+    <h2 id="qs">Click on the button to change the text.</h2>
+    <h2 class="qs">Click on the button to change the color.</h2>
+    <button onclick="fun1()">CLick Me !!!</button>
 
     <h1><li>querySelectorAll()</li></h1>
     <p>Unlike querySelector() that returns only the first instance of all matching elements, querySelectorAll() <b>returns all elements that match the specified CSS selector.</b></p>
     <h2 class="a">Color.</h2>
     <h2 class="a">Color.</h2>
-    <button onclick="fun()">CLick Me!!!</button>
+    <button onclick="fun2()">CLick Me!!!</button>
     
     <h1><li>appendChild()</li></h1>
     <p>The appendChild() method <b>adds an element as the last child</b> to the HTML element that invokes this method.</p>
@@ -38,7 +38,7 @@
         <li>Coffee</li>
         <li>Tea</li>
     </ul>
-    <button onclick="appenChild()">Click to append child !!</button>
+    <button onclick="fun3()">Click to append child !!</button>
 
     <h1><li>removeChild()</li></h1>
     <p>The removeChild() method<b> removes a specified child element </b>from the HTML element that calls this method.</p>
@@ -47,62 +47,70 @@
         <li>Tea</li>
         <li>Cold coffee</li>
     </ul>
-    <button onclick="remoChild()">Click twice to remove child !!</button>
+    <button onclick="fun4()">Click twice to remove child !!</button>
 
     <h1><li>createDocumentFragment()</li></h1>
     <p>The createDocumentFragment() method may not be as well known as the others in this list, nevertheless is an important one, especially if you want to <b> insert multiple elements in bulk,</b> such as adding multiple rows to a table.</p>
     <ul id="ul">
     </ul>
-    <button onclick="myFunction11()">Try it</button>
+    <button onclick="fun5()">Try it</button>
 
     <h1><li>getComputedStyle()</li></h1>
     <p>Sometimes you want to check the CSS property values of an element before making any changes. You can use the ele.style property to do the same, however the getComputedStyle() method has been made just for this purpose, it <b> returns the read-only computed values</b> of all the CSS properties of a specified HTML element.</p>
     <div id="test" style="height: 50px;background-color: rgba(108, 22, 207, 0.452);"><b>TEST</b></div>
-    <p><button onclick="myFunction22()">Try it</button></p>
+    <p><button onclick="fun6()">Try it</button></p>
     <p>The computed background color for the test div is: <span id="demo"></span></p>
 
     <h1><li>setAttribute()</li></h1>
     <p>The setAttribute() method either <b> adds a new attribute </b> to an HTML element, or <b> updates the value</b> of an attribute that already exists.</p>
     <h3>Click to change the color !!</h3>
-    <button onclick="myFunction33()">Try it</button>
+    <button onclick="fun7()">Try it</button>
 
-    <h1><li>setAttribute()</li></h1>
-    <p>The setAttribute() method either <b>adds a new attribute</b> to an HTML element, or <b> updates the value</b> of an attribute that already exists.</p>
+    <h1><li>getAttribute()</li></h1>
+    <p>The getAttribute() method<b>returns the value of a specified attribute</b> belonging to a certain HTML element.</p>
     <h2 class="democlass">Click the button to display the value of the class attribute of the h2 element.</h2>
-    <button onclick="myFunction44()">Try it</button>
+    <button onclick="fun8()">Try it</button>
     <p id="demo1"></p>
 
-    <h1><li> removeAttribute()</li></h1>
+    <h1><li>removeAttribute()</li></h1>
     <p>The removeAttribute() method <b> removes a given attribute</b>of a specific HTML element.</p>
     <h4 class="democlass">Hello World</h4>
     <p id="demo">Click the button to remove the class attribute from the h1 element.</p>
-    <button onclick="myFunction55()">Try it</button>
+    <button onclick="fun9()">Try it</button>
+
+    <h1><li>insertBefore()</li></h1>
+    <p>The insertBefore() method <b> adds a specified child element before another child element.</b> The method is called by the parent element.</p>
+    <ul id="add">
+        <li>Coffee</li>
+        <li>Tea</li>
+    </ul>
+    <p>Click the button to insert an item to the list.</p>
+    <button onclick="fun10()">Try it</button>
 
     <h1><li>cloneNode()</li></h1>
     <p>When you have to create a new element that needs to be the <b>same as an already existing element</b> on the web page, you can simply <b>create a copy of the already existing element</b> using the cloneNode() method.</p>
-    <ul id="myList1">
+    <ul id="clone1">
         <li>Coffee</li>
         <li>Tea</li>
     </ul>
-    <ul id="myList2">
+    <ul id="clone2">
         <li>Water</li>
         <li>Milk</li>
     </ul>
-    <button onclick="myFunction3()">Try it</button>
+    <button onclick="fun11()">Try it</button>
 
     <h1><li> replaceChild()</li></h1>
     <p>The replaceChild() method <b>replaces a child element with another one </b>belonging to the parent element that calls this method.</p>
-    <ul id="myList1">
+    <ul id="replace">
         <li>Coffee</li>
         <li>Tea</li>
         <li>Milk</li>
     </ul>
-    <button onclick="myFunction1()">Try it</button>
+    <button onclick="fun12()">Try it</button>
 
     <h1><li>createElement()</li></h1>
     <p>The createElement() method<b>creates a new HTML element</b> using the <b>name of the HTML tag</b> to be created, such as 'p' or 'div'.</p>
-    <button onclick="myFunction()">Try it</button>
-
+    <button onclick="fun13()">Try it</button>
     </ol>
 </body>
 </html>

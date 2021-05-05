@@ -1,8 +1,8 @@
 document.addEventListener("click", function(){
-    document.getElementById("mo").innerHTML = "You are Beautiful/Handsome !!!";
-  })
+  document.getElementById("mo").innerHTML = "You are Beautiful/Handsome !!!";
+})
   
- document.addEventListener("mousemove", add);
+document.addEventListener("mousemove", add);
 function add() {
   document.getElementById("number").innerHTML = Math.random();
 }
@@ -10,75 +10,85 @@ function removeHandler() {
   document.removeEventListener("mousemove", add);
 }
 
-function myFunction() {
-  var btn = document.createElement("button");
-  document.body.appendChild(btn);
+function fun1() {
+document.querySelector("#qs").innerHTML = "Hello !!";
+document.querySelector(".qs").style.color = "red";
+document.querySelector(".qs").innerHTML = "RED color";
 }
 
- function appenChild(){
+function fun2() {
+var x, i;
+x = document.querySelectorAll(".a");
+for (i = 0; i < x.length; i++) {
+  x[i].style.backgroundColor = "red";
+}
+}
+
+ function fun3(){
   var node = document.createElement("li");
   var textnode = document.createTextNode("Cold Coffee");
   node.appendChild(textnode);
   document.getElementById("myList").appendChild(node);
  }
 
- function remoChild(){
+ function fun4(){
   var list = document.getElementById("list");
   list.removeChild(list.childNodes[0]);
 }
 
-function myFunction3() {
-  var itm = document.getElementById("myList2").lastChild;
-  var cln = itm.cloneNode(true);
-  document.getElementById("myList1").appendChild(cln);
-}
-
-function myFunction11() {
-  var element  = document.getElementById('ul'); // assuming ul exists
+function fun5() {
+  var element  = document.getElementById('ul');
   var fragment = document.createDocumentFragment();
-  var browsers = ['Firefox', 'Chrome', 'Opera',
-      'Safari', 'Internet Explorer'];
-  
+  var browsers = ['Firefox', 'Chrome', 'Opera', 'Safari', 'Internet Explorer'];
   browsers.forEach(function(browser) {
-      var li = document.createElement('li');
-      li.textContent = browser;
-      fragment.appendChild(li);
-  });
-  
-  element.appendChild(fragment);
+  var li = document.createElement('li');
+  li.textContent = browser;
+  fragment.appendChild(li);
+});
+element.appendChild(fragment);
 }
 
-function myFunction22(){
+function fun6(){
   var elem = document.getElementById("test");
   var theCSSprop = window.getComputedStyle(elem, null).getPropertyValue("background-color");
   document.getElementById("demo").innerHTML = theCSSprop;
 }
 
-function myFunction33() {
+function fun7() {
   document.getElementsByTagName("h3")[0].setAttribute("class", "democlass"); 
 }
 
-function myFunction44() {
+function fun8() {
   var x = document.getElementsByClassName("democlass")[0].getAttribute("class"); 
   document.getElementById("demo1").innerHTML = x;
 }
 
-function myFunction55() {
+function fun9() {
   document.getElementsByTagName("h4")[0].removeAttribute("class"); 
 }
 
-function myFunction1(){
+function fun10() {
+  var newItem = document.createElement("LI");
   var textnode = document.createTextNode("Water");
-  var item = document.getElementById("myList1").childNodes[0];
+  newItem.appendChild(textnode);
+  var list = document.getElementById("add");
+  list.insertBefore(newItem, list.childNodes[0]);
+}
+
+function fun11() {
+  var itm = document.getElementById("clone2").lastChild;
+  var cln = itm.cloneNode(true);
+  document.getElementById("clone1").appendChild(cln);
+}
+
+function fun12(){
+  var textnode = document.createTextNode("Water");
+  var item = document.getElementById("replace").childNodes[0];
   item.replaceChild(textnode, item.childNodes[0]);
 }
 
-function query() {
-    document.querySelector("#qs").innerHTML = "Hello !!";
-    document.querySelector(".qs").style.color = "red";
-    document.querySelector(".qs").innerHTML = "RED color";
-}
-function fun() {
-    document.querySelectorAll(".a").innerHTML = "cool";
+function fun13() {
+  var btn = document.createElement("button");
+  document.body.appendChild(btn);
 }
 
