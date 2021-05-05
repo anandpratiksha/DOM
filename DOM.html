@@ -34,11 +34,47 @@
     
     <h1><li>appendChild()</li></h1>
     <p>The appendChild() method <b>adds an element as the last child</b> to the HTML element that invokes this method.</p>
-    <ul id="myList">
+    <ul id="myList" type="square">
         <li>Coffee</li>
         <li>Tea</li>
     </ul>
-    <button onclick="appenChild()">Try it</button>
+    <button onclick="appenChild()">Click to append child !!</button>
+
+    <h1><li>removeChild()</li></h1>
+    <p>The removeChild() method<b> removes a specified child element </b>from the HTML element that calls this method.</p>
+    <ul id="list" type="disc">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Cold coffee</li>
+    </ul>
+    <button onclick="remoChild()">Click twice to remove child !!</button>
+
+    <h1><li>createDocumentFragment()</li></h1>
+    <p>The createDocumentFragment() method may not be as well known as the others in this list, nevertheless is an important one, especially if you want to <b> insert multiple elements in bulk,</b> such as adding multiple rows to a table.</p>
+    <ul id="ul">
+    </ul>
+    <button onclick="myFunction11()">Try it</button>
+
+    <h1><li>cloneNode()</li></h1>
+    <p>When you have to create a new element that needs to be the <b>same as an already existing element</b> on the web page, you can simply <b>create a copy of the already existing element</b> using the cloneNode() method.</p>
+    <ul id="myList1">
+        <li>Coffee</li>
+        <li>Tea</li>
+    </ul>
+    <ul id="myList2">
+        <li>Water</li>
+        <li>Milk</li>
+    </ul>
+    <button onclick="myFunction3()">Try it</button>
+
+    <h1><li> replaceChild()</li></h1>
+    <p>The replaceChild() method <b>replaces a child element with another one </b>belonging to the parent element that calls this method.</p>
+    <ul id="myList1">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+    <button onclick="myFunction1()">Try it</button>
 
     <h1><li>createElement()</li></h1>
     <p>The createElement() method<b>creates a new HTML element</b> using the <b>name of the HTML tag</b> to be created, such as 'p' or 'div'.</p>
